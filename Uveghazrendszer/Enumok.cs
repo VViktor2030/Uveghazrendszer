@@ -12,6 +12,21 @@ namespace Uveghazrendszer
 			TECHNIKUS,
 			ADMIN
 		}
+
+		enum Szenzor
+		{
+			TULONZOZES,
+			SZARAZSAG,
+			BETEGSEG,
+			TAPANYAGHIANY
+		}
+
+
+
+
+
+
+
 	internal class Enumok
 	{
 

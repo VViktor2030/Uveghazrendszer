@@ -29,6 +29,21 @@ namespace Uveghazrendszer
 		public int OptimalisSuruseg { get => optimalisSuruseg; set => optimalisSuruseg = value; }
 		public string Azonosito { get => Azonosito.Substring(0, 3); }
 
+
+
+		public override bool Equals(object? noveny)
+		{
+			noveny = noveny as NovenyFaj;
+			bool egyenlo = false;
+
+			if(nev == ((NovenyFaj)(noveny)).Nev)
+			{
+				egyenlo = true;
+			}
+			return egyenlo;
+		}
+
+
 		public override string ToString()
 		{
 			return $"{nev} nedevesség: {nedvessegTartalom}, egészség: {egeszsegSzint}, ideális egyedszám: {optimalisSuruseg}";
