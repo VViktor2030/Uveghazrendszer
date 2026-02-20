@@ -27,7 +27,13 @@ namespace Uveghazrendszer
 		public int NedvessegTartalom { get => nedvessegTartalom; set => nedvessegTartalom = value; }
 		public int EgeszsegSzint { get => egeszsegSzint; set => egeszsegSzint = value; }
 		public int OptimalisSuruseg { get => optimalisSuruseg; set => optimalisSuruseg = value; }
-		public string Azonosito { get => Azonosito.Substring(0, 3); }
+		public string Azonosito 
+		{
+			get
+			{
+				return nev.Substring(0, 3);
+			}
+		}
 
 
 

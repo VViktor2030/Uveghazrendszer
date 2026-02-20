@@ -82,5 +82,18 @@ namespace Uveghazrendszer
 			novenyFaj = null;
 			egyedSzam = 0;
 		}
+		public override string ToString()
+		{
+			string str = "";
+			if (UresE)
+			{
+				str = $"| {"üres",9} ";
+			}
+			else
+			{
+				str = $"| {novenyFaj.Azonosito,3} {this.egyedSzam,2}db";
+			}
+			return str;
+		}
 	}
 }
